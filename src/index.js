@@ -1,6 +1,11 @@
-import React from 'react'
-import styles from './styles.module.css'
+import DropDownMenu from "./DropDownMenu.js";
+import style1 from "./styles/generalStyle/style1.css";
+import animation1 from "./styles/animations/animation1.css";
+import onHover from "./styles/onEvent/onHover.css";
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export {
+    DropDownMenu,
+    style1,
+    animation1,
+    onHover,
 }

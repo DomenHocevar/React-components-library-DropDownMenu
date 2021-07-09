@@ -1,4 +1,4 @@
-{
+{ 
   "name": "react-components-library-dropdownmenu",
   "version": "1.0.0",
   "description": "A DropDownMenu component made in React that can be customized using the included .css files (these are of three types, onEvent, generalStyle and animation, use one of each in any combination)",
