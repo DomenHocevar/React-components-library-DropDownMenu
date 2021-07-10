@@ -1,23 +1,29 @@
 # react-components-library-dropdownmenu
 
 > A DropDownMenu component made in React that can be customized using the included styled component css files (these are of three types, onEvent, generalStyle and transition, use one of each in any combination) which you should include in a wrapper container that contains the dropdown menu. It will only work if the onEvent type is followed by the transition type. For instance this is ok:
+
 const Wrapper = styled.div `
   ${Style1}
 
   ${OnHover}
+  
   ${Transition2}
 `
+
 And this is not: 
 const Wrapper = styled.div `
 
   ${OnHover}
+  
    ${Style1}
+   
   ${Transition2}
 `
 
 The wrapper must contain the drop down menu and can pass to it props:
 - props.headingComponent: component that represents the uppermost part of the drop down menu
 - props.childrenComponent: array of components that represent the lower parts of the drop down menu
+
 Example: 
 const App = () => {
 
@@ -50,20 +56,7 @@ const App = () => {
 npm install --save react-components-library-dropdownmenu
 ```
 
-## Usage
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'react-components-library-dropdownmenu'
-import 'react-components-library-dropdownmenu/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
 
 ## License
 
