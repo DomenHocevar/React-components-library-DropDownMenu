@@ -1,11 +1,13 @@
 import DropDownMenu from "./DropDownMenu.js";
 import {Style1} from "./styles/generalStyle/Style1.js";
-import {Animation1} from "./styles/animations/Animation1.js";
+import {Transition1} from "./styles/transitions/Transition1.js";
+import {Transition2} from "./styles/transitions/Transition2.js";
 import {OnHover} from "./styles/onEvent/OnHover.js";
 
 export {
     DropDownMenu,
     Style1,
-    Animation1,
+    Transition1,
+    Transition2,
     OnHover,
 }

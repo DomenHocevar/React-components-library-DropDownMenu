@@ -3,10 +3,12 @@ const { css } = require("styled-components");
 export const Style1 = css`
 
     .childrenContainer {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        width: auto;
+        box-sizing: border-box;
+        max-height: 0px;
+        overflow: hidden;
     }
 
 

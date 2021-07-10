@@ -5,20 +5,16 @@ import 'react-components-library-dropdownmenu/dist/index.css';
 import { DropDownMenu } from 'react-components-library-dropdownmenu';
 import { OnHover } from 'react-components-library-dropdownmenu';
 import { Style1 } from 'react-components-library-dropdownmenu';
-import { Animation1 } from 'react-components-library-dropdownmenu'
-
+import {Transition2} from 'react-components-library-dropdownmenu';
 import styled from 'styled-components';
 
 
-const SuperWrapper = styled.div`
-  display:block;
-  width:300px;
-  background-color:red;
-`
+
 const Wrapper = styled.div `
   ${Style1}
+
   ${OnHover}
-  ${Animation1}
+  ${Transition2}
 `
 
 const App = () => {
@@ -34,12 +30,12 @@ const App = () => {
   ];
 
   return (
-    <SuperWrapper>
-      <Wrapper>
-        <DropDownMenu headingComponent={headingComponent}
-        childrenComponents={childrenComponents}/>
-      </Wrapper>
-    </SuperWrapper>
+    
+    <Wrapper>
+      <DropDownMenu headingComponent={headingComponent}
+      childrenComponents={childrenComponents}/>
+    </Wrapper>
+    
   );
 }
 
